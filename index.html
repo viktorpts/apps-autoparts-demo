@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoParts Demo</title>
+    <link rel="stylesheet" href="/site.css">
+    <script type="module" src="/src/app.js"></script>
+</head>
+<body>
+    <nav>
+        <a id="home-nav" href="/">Home</a>
+        <a id="catalog-nav" href="/catalog">Catalog</a>
+        <a id="create-nav" href="/create">Create</a>
+        <a id="login-nav" href="/login">Login</a>
+        <a id="register-nav" href="/register">Register</a>
+    </nav>
+
+    <section id="home">
+        <h1>Welcome to autoparts!</h1>
+        <p>Browse a wide selection of quality parts for your vehicle needs!</p>
+        <p><a id="catalog-link" href="/catalog">Open Catalog</a></p>
+    </section>
+
+    <section id="catalog">
+        <h1>Parts Catalog</h1>
+        <ul id="parts">
+            <p>Loading &hellip;</p>
+        </ul>
+    </section>
+
+    <section id="details">
+        <h1>Part Details</h1>
+        <h2>Loading &hellip;</h2> <!-- Part label -->
+        <p class="subtitle">Loading &hellip;</p> <!-- Part price and quantity in stock -->
+        <p class="description">Loading &hellip;</p> <!-- Part description -->
+    </section>
+
+    <section id="login">
+        <h1>Login</h1>
+        <form>
+            <label>Email: <input type="text" name="email"></label>
+            <label>Password: <input type="password" name="password"></label>
+            <button>Sign In</button>
+            <p>Don't have an account? <a id="register-link" href="/register">Register here</a></p>
+        </form>
+    </section>
+
+    <section id="register">
+        <h1>Register</h1>
+        <form>
+            <label>Email: <input type="text" name="email"></label>
+            <label>Password: <input type="password" name="password"></label>
+            <label>Repeat: <input type="password" name="repass"></label>
+            <button>Sign Up</button>
+            <p>Already have an account? <a id="login-link" href="/login">Login here</a></p>
+        </form>
+    </section>
+
+    <section id="create">
+        <h1>Create new part</h1>
+        <form>
+            <label>Label: <input type="text" name="label"></label>
+            <label>Price: <input type="number" step="0.01" name="price"></label>
+            <label>Quantity: <input type="number" step="1" name="qty"></label>
+            <label>Label: <textarea name="description"></textarea></label>
+            <button>Publish</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Copyright &copy; 2024 Viktor Kostadinov</p>
+    </footer>
+</body>
+</html>
